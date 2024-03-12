@@ -1,19 +1,6 @@
 import { useState, useCallback } from "react";
 
-const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': '62b817e920msh60785d5a3745e62p14c4dfjsnb61a547dd414',
-        'X-RapidAPI-Host': 'leetcode-api.p.rapidapi.com'
-    }
-};
-try {
-	const response = await fetch("https://leetcode-api.p.rapidapi.com/user/ketanraaz", options);
-	const data = await response.json();
-	console.log(data.data.matchedUser);
-} catch (error) {
-	console.error(error);
-}
+
 
 
 const ApiSection = () => {

@@ -6,6 +6,9 @@ const HeroSection = () => {
             <div className={classes["hero-section"]}>
                 <LeftSection/>
                <RightSection/>
+               <div> 
+               
+               </div>
             </div>
         );
 };

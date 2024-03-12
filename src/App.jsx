@@ -9,7 +9,7 @@ function App() {
     <>
       <Header/>
       <HeroSection/>
-      <ApiSection/>
+      {/* <ApiSection/> */}
           </>
   )
 }
