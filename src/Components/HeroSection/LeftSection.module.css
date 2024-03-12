@@ -1,0 +1,41 @@
+.content{
+    color: #000;
+}
+.content h4{
+    font-family: 'Gilroy-Bold';
+}
+.content h1{
+    font-family: 'Gilroy-Regular';
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+    font-size: 2rem;
+    padding: 0;
+    color: #000;
+}
+.content p{
+    font-family: 'Gilroy-Regular';
+    /* font-size: 1.2em; */
+    color: #000;
+    margin: 0;
+    margin-bottom: 0.3em;
+    /* margin-top: 0.5em; */
+}
+
+.content button{
+    font-family: 'Gilroy-Bold';
+    font-size: 1.2em;
+    padding: 0.5em 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.content button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
