@@ -15,16 +15,3 @@
 .main-heading span{
     font-family: 'Gilroy-Bold';
 }
-.main-content{
-    display: flex;
-    flex-direction:row ;
-    width: 100%;
-    /* align-items: center; */
-    justify-content: center;
-}
-.main-content section{
-    border: 1px solid white;
-    height: 30vh;
-    /* width: 40%; */
-    background-color: red;
-}
