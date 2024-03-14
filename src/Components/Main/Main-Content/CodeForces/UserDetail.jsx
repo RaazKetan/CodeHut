@@ -8,7 +8,7 @@ console.log(userDetails);
  return (
     <div >
       <div >
-        <h3 >Username: {userDetails.handle}</h3> Updated property name
+        <h3 >Username: {userDetails.handle}</h3> 
         <p >Rating: {userDetails.maxRating}</p> {/* New property */}
         <p >Rank: {userDetails.rank}</p> {/* Updated property name */}
         <p >Contribution: {userDetails.contribution}</p> {/* New property */}

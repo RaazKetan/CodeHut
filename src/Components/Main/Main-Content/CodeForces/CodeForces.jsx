@@ -1,5 +1,5 @@
 // CodeForces.js
-import React, { useState } from 'react'; // Make sure to import useState
+import { useState } from 'react'; // Make sure to import useState
 import useFetchUserDetails from '../../../../hook/useFetchUserDetails';
 import SearchInput from './SearchInput'; // Make sure to import SearchInput
 import UserDetail from './UserDetail'; // Make sure to import UserDetail
