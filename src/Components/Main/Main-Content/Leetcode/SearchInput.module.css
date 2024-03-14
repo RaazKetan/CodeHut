@@ -1,0 +1,39 @@
+/* SearchInput.module.css */
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.searchbar {
+    background-color: white;
+    z-index: 1;
+    border: none;
+    border-radius: 60px;
+    width: 80%;
+    font-size: 1.4em;
+    outline: none;
+    padding: 15px;
+    color: black;
+    font-family: 'Gilroy-Regular';
+    margin: 0.4em;
+}
+.searchbar::placeholder {
+    font-size: 1.4em;
+}
+.searchbtn {
+    font-family: 'Gilroy-Thin';
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 300px;
+}
+.searchbtn:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
