@@ -1,5 +1,8 @@
 import { useState, useCallback } from "react";
 import classes from "./LeetCode.module.css";
+// require("dotenv").config();
+const apiKey = import.meta.env.VITE_LEETCODE_API_KEY
+
 
 const LeetCode = () => {
   const [username, setUsername] = useState("");
@@ -13,11 +16,10 @@ const LeetCode = () => {
     contribution: 0,
     avatar: "",
   });
-
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "62b817e920msh60785d5a3745e62p14c4dfjsnb61a547dd414",
+      "X-RapidAPI-Key": apiKey,
       "X-RapidAPI-Host": "leetcode-api.p.rapidapi.com",
     },
   };
@@ -30,7 +32,6 @@ const LeetCode = () => {
       );
       const result = await response.json();
       console.log(result.data);
-
       // Assuming the API response structure matches the properties you're trying to set
       const userDetails = {
         uname: result.data.matchedUser.username, // Correct path to username
