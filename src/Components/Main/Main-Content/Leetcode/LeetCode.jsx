@@ -1,39 +1,23 @@
 // LeetCode.js
-import { useState, useCallback } from 'react';
+import { useState } from "react";
+import useFetchUserDetails from "../../../../hook/useFetchUserDetails";
 import SearchInput from './SearchInput';
 import UserDetails from './UserDetails';
 import classes from './LeetCode.module.css';
 
 const LeetCode = () => {
  const [user, setUser] = useState(null);
- const fetchUserDetails = useCallback(async (username) => {
-    
-    try {
-      const response = await fetch(`https://leetcode-stats-api.herokuapp.com//${username}`);
-      const result = await response.json();
-      console.log(result);
-      const userDetails = {
-        uname:username,
-        status: result.status,
-        totalSolved: result.totalSolved,
-        easySolved: result.easySolved,
-        mediumSolved: result.mediumSolved,
-        hardSolved: result.hardSolved,
-        rank: result.ranking,
-        contributionPoints: result.contributionPoints,
-        reputation: result.reputation,
-        acceptanceRate: result.acceptanceRate
-      };
-      setUser(userDetails);
-    } catch (error) {
-      console.error(error);
-    }
- }, [setUser]);
+ const { loading, error, fetchUserDetails } = useFetchUserDetails(
+ 'https://leetcode-stats-api.herokuapp.com',
+ setUser // Pass setUser as the callback to update the user state
+);
 
  return (
     <section className={classes.content}>
       <SearchInput onSearch={fetchUserDetails} />
-      {user && <UserDetails user={user} />}
+      {loading && <p>Loading...</p>}
+      {error && <p>Error: {error}</p>}
+      {user && <UserDetails user={user}/>}
     </section>
  );
 };

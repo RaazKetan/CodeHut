@@ -10,7 +10,7 @@ const UserProfile = ({ user }) => {
       </div>
       <div className={classes.detailsContainer}>
         <h2 className={classes.username}>Username: {user.uname}</h2>
-        <p className={classes.rank}>Rank: {user.rank}</p>
+        <p className={classes.rank}>Rank: {user.ranking}</p>
         <p className={classes.totalSolved}>
           Total Problems Solved: {user.totalSolved}
         </p>

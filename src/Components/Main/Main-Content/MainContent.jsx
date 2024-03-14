@@ -1,13 +1,12 @@
 import classes from './MainContent.module.css';
 import LeetCode from './Leetcode/LeetCode';
+import CodeForces from './CodeForces/CodeForces';
 const MainContent = () => {
         
     return (
         <div className={classes["main-content"]}>
         <LeetCode/>
-        <section className={classes["content-codeforces"]}>
-          <h1>codeforces</h1>
-        </section>
+        <CodeForces/>
       </div>
     );
 }
