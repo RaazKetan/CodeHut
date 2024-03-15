@@ -3,7 +3,7 @@
 
 const UserProfile = ({ user }) => {
     if (!user) return <p>Loading...</p>;
-   console.log(user);
+  //  console.log(user);
    if(user.contribution=== undefined){
       user.contribution = 0;
    }

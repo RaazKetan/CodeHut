@@ -1,8 +1,8 @@
 // LeetCode.js
 import { useState } from "react";
 import useFetchUserDetails from "../../../../hook/useFetchUserDetails";
-import SearchInput from './SearchInput';
-import UserDetails from './UserDetails';
+import SearchInput from './SearchLeetCode/SearchInput';
+import UserDetails from './UserDetailsLeetcode/UserDetails';
 import classes from './LeetCode.module.css';
 
 const LeetCode = () => {
@@ -14,6 +14,8 @@ const LeetCode = () => {
 
  return (
     <section className={classes.content}>
+    <h1>Leetcode</h1>
+    {/* <SearchInput onSearch={fetchUserDetails} placeholder="Leetcode Username" /> */}
       <SearchInput onSearch={fetchUserDetails} />
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}

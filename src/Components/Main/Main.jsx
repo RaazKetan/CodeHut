@@ -4,7 +4,7 @@ import MainContent from "./Main-Content/MainContent";
 const Main = () => {
  
   return (
-    <div className={classes.main}>
+    <div id="main" className={classes.main}>
       <div className={classes["main-heading"]}>
         Please Enter Your <span> CODING </span> Platforms <span> USERNAME</span>
       </div>

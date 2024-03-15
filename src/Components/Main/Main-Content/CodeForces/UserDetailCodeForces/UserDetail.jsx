@@ -4,7 +4,7 @@
 const UserProfile = ({ user }) => {
  if (!user) return <p>Loading...</p>;
 const userDetails = user.result[0];
-console.log(userDetails);
+// console.log(userDetails);
  return (
     <div >
       <div >

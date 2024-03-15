@@ -13,6 +13,7 @@ const CodeChef = () => {
 
     return (
         <div>
+        <h1>CodeChef</h1>
             <SearchInput onSearch={fetchUserDetails} />
             {loading && <p>Loading...</p>}
             {error && <p>Error: {error}</p>}

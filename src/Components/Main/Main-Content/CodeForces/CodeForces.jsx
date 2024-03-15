@@ -1,8 +1,8 @@
 // CodeForces.js
 import { useState } from 'react'; // Make sure to import useState
 import useFetchUserDetails from '../../../../hook/useFetchUserDetails';
-import SearchInput from './SearchInput'; // Make sure to import SearchInput
-import UserDetail from './UserDetail'; // Make sure to import UserDetail
+import SearchInput from './SearchInputCodeForces/SearchInput'; // Make sure to import SearchInput
+import UserDetail from './UserDetailCodeForces/UserDetail'; // Make sure to import UserDetail
 
 const CodeForces = () => {
     const [user, setUser] = useState(null);
@@ -13,6 +13,7 @@ const CodeForces = () => {
 
  return (
     <div>
+    <h1>CodeForces</h1>
       <SearchInput onSearch={fetchUserDetails} /> {/* Render the search input */}
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
