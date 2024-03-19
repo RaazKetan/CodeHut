@@ -7,33 +7,34 @@ form{
     flex-direction: column;
 }
 .searchbar {
-    background-color: white;
+    background-color: #f5f5f53d;
     z-index: 1;
     border: none;
     border-radius: 60px;
     width: 80%;
-    font-size: 1.4em;
+    font-size: 1em;
     outline: none;
     padding: 15px;
     color: black;
-    font-family: 'Gilroy-Regular';
+    font-family: 'Gilroy-Bold';
     margin: 0.4em;
 }
 .searchbar::placeholder {
-    font-size: 1.4em;
+    font-size:1em;
 }
 .searchbtn {
-    font-family: 'Gilroy-Thin';
-    background-color: white;
+    font-family: 'Gilroy-Bold';
+    /* background-color: white; */
     border: none;
-    color: black;
+    color: #f5f5f53d;
     font-size: 1.5em;
     letter-spacing: 2px;
     width: 80%;
     padding: 10px;
     border-radius: 300px;
+    transition: all 0.3s ease;
 }
 .searchbtn:hover {
-    background-color: #f5f5f5;
+    background-color: #f5f5f594;
     cursor: pointer;
 }

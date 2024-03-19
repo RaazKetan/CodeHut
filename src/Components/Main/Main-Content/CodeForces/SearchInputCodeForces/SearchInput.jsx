@@ -1,6 +1,6 @@
 // components/SearchInput.js
 import React from 'react';
-// import classes from './SearchInput.module.css';
+import classes from './SearchInput.module.css';
 
 const SearchInput = ({ onSearch }) => {
  const [username, setUsername] = React.useState('');
@@ -20,10 +20,11 @@ const SearchInput = ({ onSearch }) => {
         value={username}
         onChange={handleChange}
         type="text"
+        className={classes.searchbar}
         placeholder="CodeForces Username"
         // className={searchbar}
       />
-      <button type="submit">Search</button>
+      <button type="submit" className={classes.searchbtn}>Search</button>
     </form>
  );
 };
