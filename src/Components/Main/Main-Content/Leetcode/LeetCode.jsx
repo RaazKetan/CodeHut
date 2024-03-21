@@ -19,7 +19,7 @@ const LeetCode = () => {
     {loading && loadingScreen}
     {error && <p>Error: {error}</p>}
     {/* Check if user is not null before rendering UserDetails */}
-    {user && <UserDetails user={user}/>}
+    {user && <UserDetails user={user} submissionCalendar={user.submissionCalendar}/>}
     </section>
  );
 };
