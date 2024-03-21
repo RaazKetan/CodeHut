@@ -15,11 +15,11 @@ const LeetCode = () => {
  return (
     <section className={classes.content}>
     <h1>Leetcode</h1>
-    {/* <SearchInput onSearch={fetchUserDetails} placeholder="Leetcode Username" /> */}
-      <SearchInput onSearch={fetchUserDetails} />
-      {loading &&loadingScreen}
-      {error && <p>Error: {error}</p>}
-      {user && <UserDetails user={user}/>}
+    <SearchInput onSearch={fetchUserDetails} />
+    {loading && loadingScreen}
+    {error && <p>Error: {error}</p>}
+    {/* Check if user is not null before rendering UserDetails */}
+    {user && <UserDetails user={user}/>}
     </section>
  );
 };

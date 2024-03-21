@@ -12,6 +12,11 @@ const SearchInput = ({ onSearch }) => {
  const handleSubmit = (e) => {
     e.preventDefault();
     onSearch(username);
+    if(username === ''){
+         alert('Please enter a Leetcode username');
+         onSearch('');
+         return;
+    }
     setUsername('');
  };
 
