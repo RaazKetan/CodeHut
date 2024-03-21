@@ -1,5 +1,5 @@
 .nav-bar{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     margin: 0;
     padding: 0;    
@@ -17,11 +17,11 @@
     padding: 20px 0;
     display: flex;
 /* -align: center; */
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    list-style: none;
+    /* list-style: none; */
     width: 100%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     transition: all 0.5s ease-in-out;
     cursor: pointer;
     /* margin: 0 10px; */

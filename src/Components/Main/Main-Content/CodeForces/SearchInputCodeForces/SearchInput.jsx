@@ -12,6 +12,12 @@ const SearchInput = ({ onSearch }) => {
  const handleSubmit = (e) => {
     e.preventDefault();
     onSearch(username);
+    if(username === '') {
+      alert('Please enter Codeforces username');
+      // user = null;
+      return;
+    }
+    setUsername('');
  };
 
  return (
