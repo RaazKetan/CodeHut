@@ -11,13 +11,13 @@ const LeetCode = () => {
  'https://leetcode-stats-api.herokuapp.com',
  setUser // Pass setUser as the callback to update the user state
 );
-
+   const loadingScreen = <p>Loading...</p>;
  return (
     <section className={classes.content}>
     <h1>Leetcode</h1>
     {/* <SearchInput onSearch={fetchUserDetails} placeholder="Leetcode Username" /> */}
       <SearchInput onSearch={fetchUserDetails} />
-      {loading && <p>Loading...</p>}
+      {loading &&loadingScreen}
       {error && <p>Error: {error}</p>}
       {user && <UserDetails user={user}/>}
     </section>

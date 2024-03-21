@@ -12,6 +12,7 @@ const SearchInput = ({ onSearch }) => {
  const handleSubmit = (e) => {
     e.preventDefault();
     onSearch(username);
+    setUsername('');
  };
 
  return (

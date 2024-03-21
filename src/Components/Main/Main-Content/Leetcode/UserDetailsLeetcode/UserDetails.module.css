@@ -1,18 +1,15 @@
-
-
 /* UserDetails.module.css */
 .container {
-    margin-top: 1em;
+    margin-top: 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    /* background-color: #f4f4f4; */
-    /* border-radius: 10px; */
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-   }
-   
-   .acceptanceRateCircle {
+    padding: 5px;
+    /* Adjusted for responsiveness */
+    flex-wrap: wrap;
+}
+
+.acceptanceRateCircle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,21 +18,54 @@
     border-radius: 50%;
     background-color: black;
     color: white;
-    font-size: 24px;
+    font-family: 'Gilroy-Bold';
+    font-size: 1.7em;
     margin-right: 20px;
-   }
-   
-   .detailsContainer {
-    display: flex;
-    flex-direction: column;
-   }
-   
-   .detailsContainer p {
-    margin-bottom: 10px;
-   }
-   
+    animation: increaseAcceptanceRate 2s forwards;
+    /* Responsive adjustments */
+    margin-right: 10px;
+}
 
 .detailsContainer {
     display: flex;
     flex-direction: column;
+    text-align: justify;
+    /* Responsive adjustments */
+    /* flex-grow: 1; */
+}
+
+.detailsContainer p {
+    color: #271f2a;
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 1.4em;
+    margin-bottom: 2px;
+    /* Responsive adjustments */
+    font-size: 1em; /* Smaller font size for smaller screens */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .acceptanceRateCircle {
+        width: 80px;
+        height: 80px;
+        font-size: 1.4em; /* Adjust font size for smaller screens */
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .detailsContainer p {
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .acceptanceRateCircle {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2em; /* Adjust font size for even smaller screens */
+        margin-right: 5px; /* Adjust margin for even smaller screens */
+    }
+
+    .detailsContainer p {
+        font-size: 0.8em; /* Adjust font size for even smaller screens */
+    }
 }
