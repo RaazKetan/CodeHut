@@ -1,10 +1,10 @@
 :root {
-  font-family: 'Gilroy-Regular', sans-s;
+  font-family: 'Gilroy-Regular', sans-serif;
   font-weight: 400;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background: linear-gradient(45deg, rgb(182, 163, 201), rgb(227, 204, 189));
+  background: linear-gradient(90deg, rgb(182, 163, 201), rgb(227, 204, 189));
   /* background-color:#E9D8CD; */
   /* 3DCD6E2 */
 }

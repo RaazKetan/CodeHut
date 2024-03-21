@@ -5,6 +5,8 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
+    /* overflow: hidden; */
+    /* background-color: blue; */
     /* Adjusted for responsiveness */
     flex-wrap: wrap;
 }
@@ -42,7 +44,6 @@
     /* Responsive adjustments */
     font-size: 1em; /* Smaller font size for smaller screens */
 }
-
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
     .acceptanceRateCircle {
