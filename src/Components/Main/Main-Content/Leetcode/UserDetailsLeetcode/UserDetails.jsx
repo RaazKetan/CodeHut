@@ -1,6 +1,4 @@
-// import React from 'react';
-import classes from "./UserDetails.module.css"; // Assuming you have a CSS module for styling
-
+import classes from "./UserDetails.module.css"; 
 const UserProfile = ({ user }) => {
 
   return (

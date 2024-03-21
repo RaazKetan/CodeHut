@@ -1,17 +1,19 @@
 /* SearchInput.module.css */
 
-form{
+form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%; /* Ensure the form takes full width */
 }
+
 .searchbar {
     background-color: #f5f5f53d;
     z-index: 1;
     border: none;
     border-radius: 60px;
-    width: 60%;
+    width: 60%; /* Adjusted for responsiveness */
     font-size: 1em;
     outline: none;
     padding: 15px;
@@ -19,23 +21,46 @@ form{
     font-family: 'Gilroy-Bold';
     margin: 0.4em;
 }
+
 .searchbar::placeholder {
-    font-size:1.2em;
+    font-size: 1.2em;
 }
+
 .searchbtn {
     font-family: 'Gilroy-Bold';
     background-color: #980b21;
     border: none;
     color: #dedede;
-    /* color: #f5f5f53d; */
     font-size: 1.5em;
     letter-spacing: 2px;
-    width: 50%;
+    width: 50%; /* Adjusted for responsiveness */
     padding: 10px;
     border-radius: 300px;
     transition: all 0.3s ease;
 }
+
 .searchbtn:hover {
     background-color: #6b164c;
     cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .searchbar, .searchbtn {
+        width: 80%; /* Adjusted for smaller screens */
+    }
+
+    .searchbar::placeholder {
+        font-size: 1em; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .searchbar, .searchbtn {
+        width: 90%; /* Adjusted for even smaller screens */
+    }
+
+    .searchbar::placeholder {
+        font-size: 0.8em; /* Adjusted font size for even smaller screens */
+    }
 }
