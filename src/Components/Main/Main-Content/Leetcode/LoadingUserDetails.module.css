@@ -1,0 +1,73 @@
+/* LoadingUserDetails.module.css */
+.container {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.rank, .totalSolved, .easySolved, .mediumSolved, .hardSolved, .totalSubmissions, .maxSubmissions, .contributionPoints, .reputation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.5); /* Grey background with 50% opacity */
+    margin-right: 20px;
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 25%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 75%);
+    background-size: 200% 100%;
+    animation: shine 1s infinite;
+}
+@keyframes shine {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+   }
+.acceptanceRateCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.5); /* Grey background with 50% opacity */
+    margin-right: 20px;
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 25%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 75%);
+    background-size: 200% 100%;
+    animation: shine 2s infinite;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.detailsContainer div {
+    width: 40vh;
+    height: 20px; /* Adjust based on your layout */
+    background-color: rgba(128, 128, 128, 0.5); /* Grey background with 50% opacity */
+    margin-bottom: 10px; /* Add space between boxes */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .acceptanceRateCircle, .detailsContainer div {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .acceptanceRateCircle, .detailsContainer div {
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
+    }
+}
