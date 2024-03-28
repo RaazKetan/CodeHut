@@ -3,7 +3,7 @@ import HeroSection from './Components/HeroSection/HeroSection'
 import './App.css'
 import Main from './Components/Main/Main'
 import { Route, Routes } from 'react-router-dom'
-// import express from 'express';
+import TodaysNews from './Components/HotPage/TodayNews'
 
 function App() {
   return (
@@ -11,7 +11,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HeroSection />} />
-        <Route path="/" element={<Main />} />
+        <Route path="/checkstats" element={<Main />} />
+        <Route path="/todaynews" element={<TodaysNews />} />
+        
       </Routes>
     </>
   )

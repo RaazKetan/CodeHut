@@ -1,33 +1,30 @@
 // import {useNavigate} from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import classes from './Header.module.css';
 const Header = () => {
 
-  const check = ( ) => {
-    document.getElementById('main').scrollIntoView({ behavior: 'smooth' });
-  }
     return (
         <nav className={classes["nav-bar"]}>
         <ul>
           <li>
-          <Link>Codee {'</>'}</Link>
+          <NavLink to="..">Codee {'</>'}</NavLink>
             {/* <a href="#">Codee {'</>'}</a> */}
           </li>
           <li>
-          <Link>Home</Link>
+          <NavLink to="..">Home</NavLink>
           </li>
           <li>
-          <a href="https://github.com/RaazKetan/CodeHut" target="_blank" rel="noopener noreferrer">Get Code</a>
+          <NavLink to="/todaynews">Hot Topic</NavLink>
 
           </li>
           <li>
-          <Link >About Me</Link>
+          <NavLink >About Me</NavLink>
           </li>
           <li>
             <a href="https://ketan-raj-2-0.vercel.app/" target='_black'>Other Work</a>
           </li>
           <li>
-          <Link  onClick={check}>Get Started</Link>
+          <NavLink to="/checkstats">Check-Stats</NavLink>
           </li>
         </ul>
       </nav>
