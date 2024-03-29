@@ -9,103 +9,13 @@
 }
    
    h1 {
-    font-size: 24px;
+      text-align: center;
+    font-size: 3.5em;
+    font-family: 'Gilroy-Bold', sans-serif;
     color: #333;
     margin-bottom: 20px;
    }
    
-   .categories,
-   .sortBy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-   }
    
-   .categories span,
-   .sortBy span {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-   }
    
-   button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-   }
    
-   button:hover {
-    background-color: black;
-   }
-   
-   .news {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-     }
-     
-     .newsItem {
-      display: flex;
-      /* flex-direction: column; */
-      align-items: center;
-      /* width: ; Adjusts for spacing between items */
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-     }
-     
-     .newsItem img {
-      width: 40%;
-      object-fit: cover;
-      border-radius: 10px;
-      margin: 10px;
-     }
-     
-     .newsItem h2 {
-      font-size: 20px;
-      color: #333;
-      margin-bottom: 5px;
-     }
-     
-     .newsItem span {
-      border: 1px solid #666;
-      border-radius: 20px;
-      padding: 5px;
-      font-size: 14px;
-      color: #666;
-      margin: 5px;
-      transition:all 0.3s ease-in-out;
-     }
-     .newsItem span:hover {
-      background-color: #fff;
-      cursor: pointer;
-     }
-     .newsItem p {
-      font-size: 16px;
-      color: #666;
-      margin-bottom: 10px;
-     }
-     
-     .newsItem a {
-      text-decoration: none;
-      color: #007bff;
-      font-size: 14px;
-     }
-     
-     .newsItem a:hover {
-      text-decoration: underline;
-     }
-     
-     /* Responsive styles */
-     @media (max-width: 768px) {
-      .newsItem {
-         width: 100%;
-      }
-     }
