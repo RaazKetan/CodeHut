@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+import img from '../../assets/Images/code.jpg';
 import styles from './TodayNews.module.css';
 function TodaysNews() {
   return (
@@ -28,6 +30,17 @@ function TodaysNews() {
           <button>Latest</button>
           <button>Popular</button>
         </span>
+      </section>
+      <section>
+        <section ><img src={img} style={{width:'100px'}}></img></section>
+        <section>
+        <Link><h2>News Title</h2></Link>
+        <span>News Name</span>
+        <span>News author</span>
+        <span>News Date</span>
+        </section>
+        <p>News Description</p>
+
       </section>
       
       
