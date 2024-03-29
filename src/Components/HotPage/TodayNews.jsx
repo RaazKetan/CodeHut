@@ -1,7 +1,21 @@
 import {Link} from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import img from '../../assets/Images/code.jpg';
 import styles from './TodayNews.module.css';
 function TodaysNews() {
+  const [news, setNews] = useState([]);
+
+  useEffect(()=>{
+    async function getNews(){
+      const response = await fetch("https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=7215d8df92394788ac86c2d5867bfced");
+      const data = await response.json();
+      // console.log(data);
+    }
+    getNews();
+  
+  }, [])
+
+
   return (
     <div className={styles.main}>
       <h1>TodaysNews</h1>
