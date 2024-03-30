@@ -5,9 +5,9 @@ const useNews = (category, apiKey) => {
 
  useEffect(() => {
     const fetchNews = async () => {
-      const response = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${apiKey}`);
+      const response = await fetch(`https://newsdata.io/api/1/news?apikey=${apiKey}&q=${category}&country=in&language=en  `);
       const data = await response.json();
-      setNews(data.articles);
+      setNews(data.results);
     };
 
     fetchNews();

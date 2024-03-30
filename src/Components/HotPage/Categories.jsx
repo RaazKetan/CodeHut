@@ -5,6 +5,7 @@ const Categories = ({ onCategoryChange }) => {
     <section className={styles.categories}>
       <span>Categories</span>
       <span>
+      <button onClick={() => onCategoryChange('startup')}>Sartup</button>
         <button onClick={() => onCategoryChange('technology')}>Technology</button>
         <button onClick={() => onCategoryChange('entertainment')}>Entertainment</button>
         <button onClick={() => onCategoryChange('science')}>Science</button>
