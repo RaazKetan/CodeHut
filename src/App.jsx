@@ -3,7 +3,7 @@ import HeroSection from './Components/HeroSection/HeroSection'
 import './App.css'
 import Main from './Components/Main/Main'
 import { Route, Routes } from 'react-router-dom'
-import TodaysNews from './Components/HotPage/TodayNews'
+import GitCalender from './Components/HotPage/GitCalender'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HeroSection />} />
         <Route path="/checkstats" element={<Main />} />
-        <Route path="/todaynews" element={<TodaysNews />} />
+        <Route path="/gitcalender" element={<GitCalender />} />
         
       </Routes>
     </>
