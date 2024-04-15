@@ -18,14 +18,15 @@ const Header = () => {
 
           </li>
           <li>
+          <NavLink to="/checkstats">Check-Stats</NavLink>
+          </li>
+          <li>
           <a href='https://www.linkedin.com/in/ketan-raj-4ab47b204/' target='_black'>About Me</a>
           </li>
           <li>
             <a href="https://ketan-raj-2-0.vercel.app/" target='_black'>Other Work</a>
           </li>
-          <li>
-          <NavLink to="/checkstats">Check-Stats</NavLink>
-          </li>
+         
         </ul>
       </nav>
     );
