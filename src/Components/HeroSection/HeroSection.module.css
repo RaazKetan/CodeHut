@@ -1,6 +1,25 @@
 .hero-section{
-    padding-top: 11rem;
-    display: flex;
-    padding-left: 10rem;
+    height: 100vh;
+    /* width: 100vh; */
+    display: flex;    
+    align-items: center;
+    margin-left: 100px;
+
 }
 
+@media screen and (max-width: 768px){
+    .hero-section{
+        margin-left: 0;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    .hero-section{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 320px){
+    .hero-section{
+        margin-left: 0;
+    }
+}

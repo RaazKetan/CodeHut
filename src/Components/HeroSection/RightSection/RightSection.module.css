@@ -1,35 +1,23 @@
 
 .hero-section__image img{
-    width: 50%;
+    width: 300px;
 
 }
-.infoAboutStreak span{
-    display: flex;
-    flex-direction: row;
-    /* width: 10%; */
-    /* background-color: bisque; */
-    color: white;
+@media screen and (max-width: 768px){
+    .hero-section__image img{
+        width: 300px;
+    }
+    
 }
-.infoAboutStreak span span{
-    /* position: absolute; */
-    /* display: flex; */
-    padding: 10px;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid black;
+@media screen and (max-width: 480px){
+    .hero-section__image img{
+        width: 200px;
+    }
+    
 }
-.infoAboutStreak span span h1{
-    font-size: 1.3em;
-    margin: 0;
-    padding: 0;
+@media screen and (max-width: 320px){
+    .hero-section__image img{
+        width: 150px;
+    }
+    
 }
-.infoAboutStreak span span h5{
-    font-family: 'Gilroy-Thin';
-    font-size: 0.7em;
-    margin: 0;
-    padding: 0;
-}
-/* .infoAboutStreak span:nth-child(2){
-    left: 30%;
-} */

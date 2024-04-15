@@ -1,9 +1,8 @@
+import { Link } from "react-router-dom";
 import classes from "./LeftSection.module.css";
 
 const LeftSection = () => {
-    const check = ( ) => {
-        document.getElementById('main').scrollIntoView({ behavior: 'smooth' });
-      }
+  
     return (
         <div className = {classes.content}>
             <h4>Your Best Choice</h4>
@@ -12,12 +11,12 @@ const LeftSection = () => {
                     </h1>
                     <p>Monitor your performance and progress across diffrent coding platforms
                     </p>
-                    <button
-                    onClick={check}
-                    > 
+                    <Link to="/gitcalender">
+                    <button> 
                     Get Started
                     
                     </button>
+                    </Link>
         </div>
     )
 };

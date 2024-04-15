@@ -1,14 +1,16 @@
 .content{
     color: #000;
+    margin: 10px;
 }
 .content h4{
     font-family: 'Gilroy-Bold';
 }
 .content h1{
+    text-align: left;
     font-family: 'Gilroy-Regular';
-    margin-top: 0.3rem;
-    margin-bottom: 0.2rem;
-    font-size: 2rem;
+    /* margin-top: 0.3rem; */
+    /* margin-bottom: 0.2rem; */
+    font-size: 30px;
     padding: 0;
     color: #000;
 }
@@ -16,17 +18,14 @@
     font-family: 'Gilroy-Regular';
     /* font-size: 1.2em; */
     color: #000;
-    margin: 0;
     margin-bottom: 0.3em;
     /* margin-top: 0.5em; */
 }
 
 .content button{
     font-family: 'Gilroy-Bold';
-    font-size: 1.2em;
-    padding: 0.5em 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    font-size: 15px;
+    padding: 10px 30px;
     background-color: #000;
     color: #fff;
     border: none;
@@ -38,4 +37,40 @@
     background-color: #fff;
     color: #000;
     border: 1px solid #000;
+}
+@media screen and (max-width: 768px){
+    
+    .content h1{
+        font-size: 20px;
+    }
+    .content p{
+        font-size: 1em;
+    }
+    .content button{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 480px){
+    .content h1{
+        font-size: 15px;
+    }
+    .content p{
+        font-size: 0.9em;
+    }
+    .content button{
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width: 320px){
+    .content h1{
+        font-size: 12px;
+    }
+    .content p{
+        font-size: 0.8em;
+    }
+    .content button{
+        font-size: 8px;
+    }
+    
 }
